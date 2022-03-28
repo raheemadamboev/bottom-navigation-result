@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BottomNavigationResult</string>
+    <string name="greeting_screen">Greeting</string>
+    <string name="feed_screen">Feed</string>
 </resources>

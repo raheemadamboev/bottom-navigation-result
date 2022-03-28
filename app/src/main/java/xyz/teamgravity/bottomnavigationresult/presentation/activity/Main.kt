@@ -1,9 +1,10 @@
-package xyz.teamgravity.bottomnavigationresult
+package xyz.teamgravity.bottomnavigationresult.presentation.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import xyz.teamgravity.bottomnavigationresult.ui.theme.BottomNavigationResultTheme
+import xyz.teamgravity.bottomnavigationresult.presentation.navigation.Navigation
+import xyz.teamgravity.bottomnavigationresult.presentation.theme.BottomNavigationResultTheme
 
 class Main : ComponentActivity() {
 
@@ -11,6 +12,7 @@ class Main : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BottomNavigationResultTheme {
+                Navigation()
             }
         }
     }

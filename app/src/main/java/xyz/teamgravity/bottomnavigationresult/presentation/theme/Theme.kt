@@ -1,4 +1,4 @@
-package xyz.teamgravity.bottomnavigationresult.ui.theme
+package xyz.teamgravity.bottomnavigationresult.presentation.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

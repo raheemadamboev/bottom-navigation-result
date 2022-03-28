@@ -1,4 +1,4 @@
-package xyz.teamgravity.bottomnavigationresult.ui.theme
+package xyz.teamgravity.bottomnavigationresult.presentation.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
