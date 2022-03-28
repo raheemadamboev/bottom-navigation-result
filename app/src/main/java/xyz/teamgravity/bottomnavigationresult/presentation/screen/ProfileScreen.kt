@@ -15,7 +15,7 @@ import xyz.teamgravity.bottomnavigationresult.presentation.navigation.Navigation
 @Destination(navGraph = Navigation.GRAPH_BOTTOM_NAVIGATION)
 @Composable
 fun ProfileScreen(
-    resultNavigator: ResultBackNavigator<Int>
+    navigator: ResultBackNavigator<Int>
 ) {
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -23,18 +23,10 @@ fun ProfileScreen(
         verticalArrangement = Arrangement.Center
     ) {
         Text(text = "Profile")
-        Button(
-            onClick = {
-                resultNavigator.navigateBack(1)
-            }
-        ) {
+        Button(onClick = { navigator.navigateBack(1) }) {
             Text(text = "1")
         }
-        Button(
-            onClick = {
-                resultNavigator.navigateBack(2)
-            }
-        ) {
+        Button(onClick = { navigator.navigateBack(2) }) {
             Text(text = "2")
         }
     }

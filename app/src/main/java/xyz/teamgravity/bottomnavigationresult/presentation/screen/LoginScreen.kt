@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import xyz.teamgravity.bottomnavigationresult.destinations.MainScreenDestination
+import xyz.teamgravity.bottomnavigationresult.presentation.screen.destinations.MainScreenDestination
 
 @Destination(start = true)
 @Composable
@@ -23,9 +23,7 @@ fun LoginScreen(
         verticalArrangement = Arrangement.Center
     ) {
         Text(text = "Login")
-        Button(onClick = {
-            navigator.navigate(MainScreenDestination)
-        }) {
+        Button(onClick = { navigator.navigate(MainScreenDestination) }) {
             Text(text = "Login")
         }
     }
